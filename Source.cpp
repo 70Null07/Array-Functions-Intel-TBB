@@ -27,7 +27,7 @@ public:
 				sum += array2[i][j];
 			}
 	}
-	// Объединение двух задач
+	// РћР±СЉРµРґРёРЅРµРЅРёРµ РґРІСѓС… Р·Р°РґР°С‡
 	void join(const reduce_par& r) { sum += r.sum; }
 };
 
@@ -112,7 +112,7 @@ public:
 	}
 };
 
-// Шаблонная функция заполнения матриц
+// РЁР°Р±Р»РѕРЅРЅР°СЏ С„СѓРЅРєС†РёСЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ РјР°С‚СЂРёС†
 template <typename t>
 double fillMatr(t**& matrix, int& size)
 {
@@ -127,7 +127,7 @@ double fillMatr(t**& matrix, int& size)
 	return omp_get_wtime() - time_start;
 }
 
-// Шаблонная функция сложения матриц omp parallel for
+// РЁР°Р±Р»РѕРЅРЅР°СЏ С„СѓРЅРєС†РёСЏ СЃР»РѕР¶РµРЅРёСЏ РјР°С‚СЂРёС† omp parallel for
 template <typename t>
 double addMatrixOmpParallel(t**& matr1, t**& matr2, int &size)
 {
@@ -150,7 +150,7 @@ double addMatrixOmpParallel(t**& matr1, t**& matr2, int &size)
 	return omp_get_wtime() - t_start;
 }
 
-// Шаблонная функция сложения матриц omp parallel sections
+// РЁР°Р±Р»РѕРЅРЅР°СЏ С„СѓРЅРєС†РёСЏ СЃР»РѕР¶РµРЅРёСЏ РјР°С‚СЂРёС† omp parallel sections
 template <typename t>
 double addMatrixOmpSections(t**& matr1, t**& matr2, int &size)
 {
@@ -203,7 +203,7 @@ double addMatrixOmpSections(t**& matr1, t**& matr2, int &size)
 	return omp_get_wtime() - t_start;
 }
 
-// Шаблонная функция сложения матриц tbb::parallel_for lambda
+// РЁР°Р±Р»РѕРЅРЅР°СЏ С„СѓРЅРєС†РёСЏ СЃР»РѕР¶РµРЅРёСЏ РјР°С‚СЂРёС† tbb::parallel_for lambda
 template <typename t>
 double addMatrixTbbLambda(t**& matr1, t**& matr2, int& size)
 {
@@ -227,7 +227,7 @@ double addMatrixTbbLambda(t**& matr1, t**& matr2, int& size)
 	return omp_get_wtime() - t_start;
 }
 
-// Шаблонная функция сложения матриц tbb::parallel_reduce class
+// РЁР°Р±Р»РѕРЅРЅР°СЏ С„СѓРЅРєС†РёСЏ СЃР»РѕР¶РµРЅРёСЏ РјР°С‚СЂРёС† tbb::parallel_reduce class
 template <typename t>
 double addMatrixTbbClass(t**& matr1, t**& matr2, int& size)
 {
@@ -245,7 +245,7 @@ double addMatrixTbbClass(t**& matr1, t**& matr2, int& size)
 	return omp_get_wtime() - t_start;
 }
 
-// Шаблонная функция перемножения матриц omp parallel for
+// РЁР°Р±Р»РѕРЅРЅР°СЏ С„СѓРЅРєС†РёСЏ РїРµСЂРµРјРЅРѕР¶РµРЅРёСЏ РјР°С‚СЂРёС† omp parallel for
 template <typename t>
 double multiplyMatrixOmpParallel(t**& matr1, t**& matr2, int& size)
 {
@@ -266,7 +266,7 @@ double multiplyMatrixOmpParallel(t**& matr1, t**& matr2, int& size)
 	return omp_get_wtime() - t_start;
 }
 
-// Шаблонная функция перемножения матриц omp parallel sections
+// РЁР°Р±Р»РѕРЅРЅР°СЏ С„СѓРЅРєС†РёСЏ РїРµСЂРµРјРЅРѕР¶РµРЅРёСЏ РјР°С‚СЂРёС† omp parallel sections
 template <typename t>
 double multiplyMatrixOmpSections(t**& matr1, t**& matr2, int& size)
 {
@@ -322,7 +322,7 @@ double multiplyMatrixOmpSections(t**& matr1, t**& matr2, int& size)
 	return omp_get_wtime() - t_start;
 }
 
-// Шаблонная функция перемножения матриц tbb::parallel_for lambda
+// РЁР°Р±Р»РѕРЅРЅР°СЏ С„СѓРЅРєС†РёСЏ РїРµСЂРµРјРЅРѕР¶РµРЅРёСЏ РјР°С‚СЂРёС† tbb::parallel_for lambda
 template <typename t>
 double multiplyMatrixTbbLambda(t**& matr1, t**& matr2, int& size)
 {
@@ -345,7 +345,7 @@ double multiplyMatrixTbbLambda(t**& matr1, t**& matr2, int& size)
 	return omp_get_wtime() - t_start;
 }
 
-// Шаблонная функция перемножения матриц tbb::parallel_reduce class
+// РЁР°Р±Р»РѕРЅРЅР°СЏ С„СѓРЅРєС†РёСЏ РїРµСЂРµРјРЅРѕР¶РµРЅРёСЏ РјР°С‚СЂРёС† tbb::parallel_reduce class
 template <typename t>
 double multiplyMatrixTbbClass(t**& matr1, t**& matr2, int& size)
 {
@@ -363,7 +363,7 @@ double multiplyMatrixTbbClass(t**& matr1, t**& matr2, int& size)
 	return omp_get_wtime() - t_start;
 }
 
-// Шаблонная функция вычислением суммы всех элементов матриц omp parallel for
+// РЁР°Р±Р»РѕРЅРЅР°СЏ С„СѓРЅРєС†РёСЏ РІС‹С‡РёСЃР»РµРЅРёРµРј СЃСѓРјРјС‹ РІСЃРµС… СЌР»РµРјРµРЅС‚РѕРІ РјР°С‚СЂРёС† omp parallel for
 template <typename t>
 double summMatrixOmpParallel(t**& matr1, t**& matr2, int& size)
 {
@@ -378,7 +378,7 @@ double summMatrixOmpParallel(t**& matr1, t**& matr2, int& size)
 	return omp_get_wtime() - t_start;
 }
 
-// Шаблонная функция вычислением суммы всех элементов матриц omp parallel sections
+// РЁР°Р±Р»РѕРЅРЅР°СЏ С„СѓРЅРєС†РёСЏ РІС‹С‡РёСЃР»РµРЅРёРµРј СЃСѓРјРјС‹ РІСЃРµС… СЌР»РµРјРµРЅС‚РѕРІ РјР°С‚СЂРёС† omp parallel sections
 template <typename t>
 double summMatrixOmpSections(t**& matr1, t**& matr2, int& size)
 {
@@ -437,7 +437,7 @@ double summMatrixOmpSections(t**& matr1, t**& matr2, int& size)
 	return omp_get_wtime() - t_start;
 }
 
-// Шаблонная функция вычислением суммы всех элементов матриц tbb::parallel_for lambda
+// РЁР°Р±Р»РѕРЅРЅР°СЏ С„СѓРЅРєС†РёСЏ РІС‹С‡РёСЃР»РµРЅРёРµРј СЃСѓРјРјС‹ РІСЃРµС… СЌР»РµРјРµРЅС‚РѕРІ РјР°С‚СЂРёС† tbb::parallel_for lambda
 template <typename t>
 double summMatrixTbbLambda(t**& matr1, t**& matr2, int& size)
 {
@@ -463,7 +463,7 @@ double summMatrixTbbLambda(t**& matr1, t**& matr2, int& size)
 	return omp_get_wtime() - t_start;
 }
 
-// Шаблонная функция вычислением суммы всех элементов матриц tbb::parallel_reduce class
+// РЁР°Р±Р»РѕРЅРЅР°СЏ С„СѓРЅРєС†РёСЏ РІС‹С‡РёСЃР»РµРЅРёРµРј СЃСѓРјРјС‹ РІСЃРµС… СЌР»РµРјРµРЅС‚РѕРІ РјР°С‚СЂРёС† tbb::parallel_reduce class
 template <typename t>
 double summMatrixTbbClass(t**& matr1, t**& matr2, int& size)
 {
@@ -475,7 +475,7 @@ double summMatrixTbbClass(t**& matr1, t**& matr2, int& size)
 	return omp_get_wtime() - t_start;
 }
 
-// Шаблонная функция вычисления значения суммы максимального и минимального элемента среди всех элементов двух исходных матриц omp parallel for
+// РЁР°Р±Р»РѕРЅРЅР°СЏ С„СѓРЅРєС†РёСЏ РІС‹С‡РёСЃР»РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ СЃСѓРјРјС‹ РјР°РєСЃРёРјР°Р»СЊРЅРѕРіРѕ Рё РјРёРЅРёРјР°Р»СЊРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р° СЃСЂРµРґРё РІСЃРµС… СЌР»РµРјРµРЅС‚РѕРІ РґРІСѓС… РёСЃС…РѕРґРЅС‹С… РјР°С‚СЂРёС† omp parallel for
 template <typename t>
 double minmaxOmpParallel(t**& matr1, t**& matr2, int& size)
 {
@@ -500,7 +500,7 @@ double minmaxOmpParallel(t**& matr1, t**& matr2, int& size)
 	return omp_get_wtime() - t_start;
 }
 
-// Шаблонная функция вычисления значения суммы максимального и минимального элемента среди всех элементов двух исходных матриц omp parallel sections
+// РЁР°Р±Р»РѕРЅРЅР°СЏ С„СѓРЅРєС†РёСЏ РІС‹С‡РёСЃР»РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ СЃСѓРјРјС‹ РјР°РєСЃРёРјР°Р»СЊРЅРѕРіРѕ Рё РјРёРЅРёРјР°Р»СЊРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р° СЃСЂРµРґРё РІСЃРµС… СЌР»РµРјРµРЅС‚РѕРІ РґРІСѓС… РёСЃС…РѕРґРЅС‹С… РјР°С‚СЂРёС† omp parallel sections
 template <typename t>
 double minmaxOmpSections(t**& matr1, t**& matr2, int& size)
 {
@@ -584,7 +584,7 @@ double minmaxOmpSections(t**& matr1, t**& matr2, int& size)
 	return omp_get_wtime() - t_start;
 }
 
-// Шаблонная функция вычисления значения суммы максимального и минимального элемента среди всех элементов двух исходных матриц tbb::parallel_for lambda
+// РЁР°Р±Р»РѕРЅРЅР°СЏ С„СѓРЅРєС†РёСЏ РІС‹С‡РёСЃР»РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ СЃСѓРјРјС‹ РјР°РєСЃРёРјР°Р»СЊРЅРѕРіРѕ Рё РјРёРЅРёРјР°Р»СЊРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р° СЃСЂРµРґРё РІСЃРµС… СЌР»РµРјРµРЅС‚РѕРІ РґРІСѓС… РёСЃС…РѕРґРЅС‹С… РјР°С‚СЂРёС† tbb::parallel_for lambda
 template <typename t>
 double minmaxTbbLambda(t**& matr1, t**& matr2, int& size)
 {
@@ -619,7 +619,7 @@ double minmaxTbbLambda(t**& matr1, t**& matr2, int& size)
 	return omp_get_wtime() - t_start;
 }
 
-// Шаблонная функция вычисления значения суммы максимального и минимального элемента среди всех элементов двух исходных матриц tbb::parallel_reduce class
+// РЁР°Р±Р»РѕРЅРЅР°СЏ С„СѓРЅРєС†РёСЏ РІС‹С‡РёСЃР»РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ СЃСѓРјРјС‹ РјР°РєСЃРёРјР°Р»СЊРЅРѕРіРѕ Рё РјРёРЅРёРјР°Р»СЊРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р° СЃСЂРµРґРё РІСЃРµС… СЌР»РµРјРµРЅС‚РѕРІ РґРІСѓС… РёСЃС…РѕРґРЅС‹С… РјР°С‚СЂРёС† tbb::parallel_reduce class
 template <typename t>
 double minmaxTbbClass(t**& matr1, t**& matr2, int size)
 {
@@ -633,16 +633,14 @@ double minmaxTbbClass(t**& matr1, t**& matr2, int size)
 
 double AvgTrustedIntervalAVG(double*& times, int cnt)
 {
-	// вычисление среднеарифметического значения
+	// РІС‹С‡РёСЃР»РµРЅРёРµ СЃСЂРµРґРЅРµР°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ
 	double avg = 0;
+	// РїРѕРґСЃС‡РµС‚ РІ РїРµСЂРµРјРµРЅРЅСѓСЋ СЃСѓРјРјС‹
 	for (int i = 0; i < cnt; i++)
-	{
-		// подсчет в переменную суммы
 		avg += times[i];
-	}
-	// деление на количество
+	// РґРµР»РµРЅРёРµ РЅР° РєРѕР»РёС‡РµСЃС‚РІРѕ
 	avg /= cnt;
-	// подсчет стандартного отклонения
+	// РїРѕРґСЃС‡РµС‚ СЃС‚Р°РЅРґР°СЂС‚РЅРѕРіРѕ РѕС‚РєР»РѕРЅРµРЅРёСЏ
 	double sd = 0, newAVg = 0;
 	int newCnt = 0;
 	for (int i = 0; i < cnt; i++)
@@ -651,9 +649,8 @@ double AvgTrustedIntervalAVG(double*& times, int cnt)
 	}
 	sd /= (cnt - 1.0);
 	sd = sqrt(sd);
-	// вычисление нового среднего значения в доверительном интервале
-	// с использованием среднеарифметического значения
-	//
+	// РІС‹С‡РёСЃР»РµРЅРёРµ РЅРѕРІРѕРіРѕ СЃСЂРµРґРЅРµРіРѕ Р·РЅР°С‡РµРЅРёСЏ РІ РґРѕРІРµСЂРёС‚РµР»СЊРЅРѕРј РёРЅС‚РµСЂРІР°Р»Рµ
+	// СЃ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј СЃСЂРµРґРЅРµР°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ
 	for (int i = 0; i < cnt; i++)
 	{
 		if (avg - sd <= times[i] && times[i] <= avg + sd)
@@ -676,7 +673,7 @@ void calculationMatr()
 
 	for (int size = 4250; size <= 8000; size += 1250)
 	{
-		std::cout << "Размер матриц " << size << std::endl; 
+		std::cout << "ГђГ Г§Г¬ГҐГ° Г¬Г ГІГ°ГЁГ¶ " << size << std::endl; 
 		t** matr1 = new t * [size],
 			** matr2 = new t * [size];
 
@@ -696,11 +693,11 @@ void calculationMatr()
 		{
 			omp_set_num_threads(threads);
 
-			// Установка количества потоков
+			// РЈСЃС‚Р°РЅРѕРІРєР° РєРѕР»РёС‡РµСЃС‚РІР° РїРѕС‚РѕРєРѕРІ
 			global_control
 				global_limit(global_control::max_allowed_parallelism, threads);
 
-			std::cout << "Число потоков = " << threads << " " << tbb::global_control::active_value(tbb::global_control::max_allowed_parallelism) << std::endl;
+			std::cout << "Р§РёСЃР»Рѕ РїРѕС‚РѕРєРѕРІ = " << threads << " " << tbb::global_control::active_value(tbb::global_control::max_allowed_parallelism) << std::endl;
 
 			for (int i = 0; i < EXP_NUM; i++)
 			{
@@ -721,13 +718,13 @@ void calculationMatr()
 				times[14][i] = minmaxTbbLambda(matr1, matr2, size);
 				times[15][i] = minmaxTbbClass(matr1, matr2, size);
 			}
-			std::cout << "Сложение матриц (OMP For, OMP Sections, TBB for_reduction lambda, TBB for_reduction class  - " << AvgTrustedIntervalAVG(times[0], EXP_NUM) << " " <<
+			std::cout << "РЎР»РѕР¶РµРЅРёРµ РјР°С‚СЂРёС† (OMP For, OMP Sections, TBB for_reduction lambda, TBB for_reduction class  - " << AvgTrustedIntervalAVG(times[0], EXP_NUM) << " " <<
 				AvgTrustedIntervalAVG(times[1], EXP_NUM) << " " << AvgTrustedIntervalAVG(times[2], EXP_NUM) << " " << AvgTrustedIntervalAVG(times[3], EXP_NUM) << std::endl;
-			std::cout << "Умножение матриц (OMP For, OMP Sections, TBB for_reduction lambda, TBB for_reduction class  - " << AvgTrustedIntervalAVG(times[4], EXP_NUM) << " " <<
+			std::cout << "РЈРјРЅРѕР¶РµРЅРёРµ РјР°С‚СЂРёС† (OMP For, OMP Sections, TBB for_reduction lambda, TBB for_reduction class  - " << AvgTrustedIntervalAVG(times[4], EXP_NUM) << " " <<
 				AvgTrustedIntervalAVG(times[5], EXP_NUM) << " " << AvgTrustedIntervalAVG(times[6], EXP_NUM) << " " << AvgTrustedIntervalAVG(times[7], EXP_NUM) << std::endl;
-			std::cout << "Сумма всех элементов матриц (OMP For, OMP Sections, TBB for_reduction lambda, TBB for_reduction class  - " << AvgTrustedIntervalAVG(times[8], EXP_NUM) << " " <<
+			std::cout << "РЎСѓРјРјР° РІСЃРµС… СЌР»РµРјРµРЅС‚РѕРІ РјР°С‚СЂРёС† (OMP For, OMP Sections, TBB for_reduction lambda, TBB for_reduction class  - " << AvgTrustedIntervalAVG(times[8], EXP_NUM) << " " <<
 				AvgTrustedIntervalAVG(times[9], EXP_NUM) << " " << AvgTrustedIntervalAVG(times[10], EXP_NUM) << " " << AvgTrustedIntervalAVG(times[11], EXP_NUM) << std::endl;
-			std::cout << "МинМакс матриц (OMP For, OMP Sections, TBB for_reduction lambda, TBB for_reduction class  - " << AvgTrustedIntervalAVG(times[12], EXP_NUM) << " " <<
+			std::cout << "РњРёРЅРњР°РєСЃ РјР°С‚СЂРёС† (OMP For, OMP Sections, TBB for_reduction lambda, TBB for_reduction class  - " << AvgTrustedIntervalAVG(times[12], EXP_NUM) << " " <<
 				AvgTrustedIntervalAVG(times[13], EXP_NUM) << " " << AvgTrustedIntervalAVG(times[14], EXP_NUM) << " " << AvgTrustedIntervalAVG(times[15], EXP_NUM) << std::endl;
 		}
 
